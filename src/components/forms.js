@@ -18,6 +18,18 @@ function Forms(props) {
         setAge(age - 1);
     }
 
+    function nameHandler(e) {
+        setName(e.target.value);
+    }
+
+    function ageHandler(e) {
+        setAge(e.target.value);
+    }
+
+    function submit() {
+        alert("name: " + name + " age:" + age
+            + "I will send it out")
+    }
     return (
         <div>
             <h1>Form component</h1>
@@ -27,6 +39,12 @@ function Forms(props) {
                 <button onClick={deleteone}>-</button>
             </p>
             <button onClick={setValues}>Set Name</button>
+
+            <input type="text" value={name}
+                   onChange={nameHandler} />
+            <input type="number" value={age}
+                   onChange={ageHandler} />
+            <button onClick={submit}>Submit</button>
         </div>
     );
 }

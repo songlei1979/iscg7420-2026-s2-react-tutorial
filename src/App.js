@@ -3,6 +3,8 @@ import './App.css';
 import Helloworld from "./components/Helloworld";
 import Helloworld2 from "./components/Helloworld2";
 import Forms from "./components/forms";
+import Conditions from "./components/Conditions";
+import Loops from "./components/Loops";
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <Helloworld clickMe={clickMe} name="John" age={30}/>
         <Helloworld2 clickMe={clickMe} name="John" age={30}/>
         <Forms/>
+        <Conditions/>
+        <Loops/>
     </div>
   );
 }

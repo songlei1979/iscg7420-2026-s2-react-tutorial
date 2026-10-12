@@ -21,6 +21,8 @@ class MyComponent extends Component {
                 <button onClick={this.props.clickMe}>
                     Click me from App
                 </button>
+                <p>Name: {this.props.name}</p>
+                <p>Age: {this.props.age}</p>
             </div>
         );
     }

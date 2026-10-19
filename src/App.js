@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ReducerDemo from "./components/ReducerDemo";
 import FetchDataReducer from "./components/FetchDataReducer";
 import Login from "./components/Login";
+import SimpleBlogPosts from "./components/SimpleBlogPosts";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
             <Nav.Link href="/reducer_demo">Reducer</Nav.Link>
             <Nav.Link href="/fetch_data_reducer">Fetch Data with Reducer</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/simple_blog_posts">Simple Blog Posts</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -65,6 +67,7 @@ function App() {
         <Route path="/reducer_demo" element={<ReducerDemo />} />
         <Route path="/fetch_data_reducer" element={<FetchDataReducer />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/simple_blog_posts" element={<SimpleBlogPosts />} />
       </Routes>
     </BrowserRouter>
 

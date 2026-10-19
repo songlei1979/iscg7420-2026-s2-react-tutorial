@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import axios from "axios";
 
 function Fetchdata(props) {
 
@@ -9,9 +10,10 @@ function Fetchdata(props) {
     }, []);
 
     function fetchPosts() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(response => response.json())
-            .then(data => setPosts(data))
+        // https://jsonplaceholder.typicode.com/posts
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+            .then(response =>
+                setPosts(response.data))
             .catch(error => console.error(error))
     }
 

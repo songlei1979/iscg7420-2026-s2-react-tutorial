@@ -13,6 +13,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReducerDemo from "./components/ReducerDemo";
+import FetchDataReducer from "./components/FetchDataReducer";
 
 function App() {
 
@@ -34,6 +36,8 @@ function App() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/loops">Loops</Nav.Link>
               <Nav.Link href="/conditions">Conditions</Nav.Link>
+            <Nav.Link href="/reducer_demo">Reducer</Nav.Link>
+            <Nav.Link href="/fetch_data_reducer">Fetch Data with Reducer</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -56,6 +60,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/loops" element={<Loops />} />
         <Route path="/conditions" element={<Conditions />} />
+        <Route path="/reducer_demo" element={<ReducerDemo />} />
+        <Route path="/fetch_data_reducer" element={<FetchDataReducer />} />
       </Routes>
     </BrowserRouter>
 
